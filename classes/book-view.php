@@ -6,10 +6,12 @@ class BookView
 
     public function renderAllBooks(array $books)
     {
-        echo "<ul>";
+        echo "<div class='books-container'>";
         foreach ($books as $book) {
-            echo "<li>{$book['title']}</li>";
+            echo "<div class='book-container'>";
+            echo "<h3 class='books-title'>{$book['title']}</h3>";
+            echo "</div>";
         }
-        echo "</ul>";
+        echo "</div>";
     }
 }

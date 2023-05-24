@@ -17,7 +17,7 @@ include "./partials/nav.php";
 
 
 <main class="container">
-    <h2>En Användare</h2>
+    <h2 class='users-username'><?php echo $userInfo['username'] ?></h2>
     <div class="all-books-container">
         <?php
         $userView->renderSingleUser($userInfo);

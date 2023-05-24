@@ -14,15 +14,21 @@ class UserView
         echo "</div>";
     }
 
-    public function renderSingleUser($userInfo)
+    public function renderSingleUser(array $userInfo)
     {
         echo "<div class='all-reviews-container'>";
-        $titles = $userInfo["title"];
-        $reviews = $userInfo["review_text"];
-        echo "<div class='reviews-container'>";
-        echo "<h3 class='users-username'>$titles</h3>";
-        echo "<p class='users-username'>$reviews</p>";
-        echo "</div>";
+        foreach ($userInfo as $info) {
+            $titles = $info["title"];
+            $reviews = $info["review_text"];
+            $pages = $info["pages_read"];
+            $author = $info["name"];
+            echo "<div class='reviews-container'>";
+            echo "<h3 class='users-username'>$titles</h3>";
+            echo "<h4 class='users-username'>$author</h4>";
+            echo "<p class='users-username'>$reviews</p>";
+            echo "<p class='users-username'><strong>Sidor lästa:</strong> $pages st</p>";
+            echo "</div>";
+        }
         echo "</div>";
     }
 }

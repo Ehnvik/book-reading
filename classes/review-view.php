@@ -5,6 +5,7 @@ class ReviewView
     public function renderAllReviewsByBook(array $reviews)
     {
         echo "<h2>{$reviews[0]['title']}</h2>";
+        echo "<h3>Recensioner</h3>";
         echo "<div class='all-reviews-container'>";
         foreach ($reviews as $review) {
             $username = $review['username'];

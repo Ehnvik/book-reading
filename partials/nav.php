@@ -8,5 +8,6 @@
         <li><a class="menu__item" href="index.php">Hem</a></li>
         <li><a class="menu__item" href="books.php">Böcker</a></li>
         <li><a class="menu__item" href="users.php">Användare</a></li>
+        <li><a class="menu__item" href="add-book.php">Lägg till bok</a></li>
     </ul>
 </nav>

@@ -140,6 +140,10 @@ body {
     background-color: rgb(255, 255, 255);
     width: 70%;
   }
+
+  .user-review {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -215,7 +219,7 @@ body {
     box-shadow: 1px 0px 20px rgba(151, 149, 149, 0.8),
       0px 10px 5px rgba(151, 149, 149, 0.1);
     border-radius: 18px;
-    padding: 0px 15px;
+    padding: 0px 55px;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
     transition: all 0.2s ease-in-out;
@@ -251,26 +255,30 @@ body {
     background-color: rgb(255, 255, 255);
     width: 70%;
   }
+
+  .user-review {
+    text-align: center;
+  }
 }
 
 /* Bigger screen sizes */
 
 @media screen and (min-width: 1200px) {
   .books-container {
-    width: 50%;
+    width: 65%;
   }
 
   .reviews-container {
-    width: 50%;
+    width: 55%;
   }
 }
 
 @media screen and (min-width: 1500px) {
   .books-container {
-    width: 40%;
+    width: 50%;
   }
 
   .reviews-container {
-    width: 40%;
+    width: 50%;
   }
 }

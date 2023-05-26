@@ -25,10 +25,14 @@ class UserView
             echo "<div class='reviews-container'>";
             echo "<h3 class='users-username'>$titles</h3>";
             echo "<h4 class='users-username'>$author</h4>";
-            echo "<p class='users-username'>$reviews</p>";
+            echo "<p class='users-username'><strong>Recension:</strong> $reviews</p>";
             echo "<p class='users-username'><strong>Sidor lästa:</strong> $pages st</p>";
             echo "</div>";
         }
         echo "</div>";
+    }
+
+    public function renderUserBookForm()
+    {
     }
 }
